@@ -2,25 +2,27 @@
   box-sizing: border-box;
 }
 
-.pagina-epicode {
-  padding: 0;
-  width: 100%;
-  max-width: 1366px;
-  min-height: 1920px;
-  overflow-x: hidden;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.65;
-  color: #393d41;
-}
-
 img {
   max-width: 100%;
   height: auto;
+  display: block;
+}
+
+.pagina-epicode {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1366px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.65;
+  color: #393d41;
+  background-color: #ffffff;
 }
 
 h1,
 .titolo-principale,
-.titolo-secondario {
+.titolo-secondario,
+.titolo-garanzia,
+.titolo-footer {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   color: #25a2c3;
@@ -28,35 +30,34 @@ h1,
 }
 
 header.intestazione-logo {
-  display: block;
   width: 100%;
   background-color: #000000;
-  text-align: left;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
-header.intestazione-logo img {
-  display: inline-block;
-  margin-bottom: 2rem;
+.logo-sito img {
+  height: 40px;
+  margin-left: 3rem;
 }
 
 .intestazione {
-  background-image: url("../images/banner.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../images/banner.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
-  margin-top: -2rem;
-  padding-bottom: 5rem;
+  padding: 6rem 2rem 7rem;
 }
+
 .titolo-principale {
-  padding: 2.5rem;
-  font-size: 4rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
+
 .testo-sottotitolo {
-  padding: 1rem;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
+  font-size: 1.05rem;
 }
 
 .bottone {
@@ -65,92 +66,175 @@ header.intestazione-logo img {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
   border: none;
-  padding: 0.8rem 1rem;
-  border-radius: 4%;
+  padding: 0.9rem 2.6rem;
+  border-radius: 4px;
   cursor: pointer;
-  margin: 1rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
 }
 
 .bottone:hover {
   opacity: 0.9;
 }
 
-.blocco-1,
-.blocco-2 {
-  text-align: center;
-  margin-top: 1rem;
-  padding: 0.5rem;
-}
-.titolo-secondario {
-  font-size: larger;
-  margin-bottom: 0.5rem;
+.primo-articolo {
+  position: relative;
+  max-width: 1000px;
+  margin: 5rem auto 3rem;
+  padding: 4rem 0 4rem;
 }
 
 .img-notebook {
-  width: 250px;
-  height: 250px;
-  margin: 2rem auto;
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+  height: 320px;
   border-radius: 50%;
   overflow: hidden;
   background-color: #ffffff;
+}
+
+.primo-articolo .blocco-1,
+.primo-articolo .blocco-2 {
+  text-align: left;
+  margin-left: 460px;
+  padding: 0;
+  max-width: 420px;
+  font-size: 0.95rem;
+}
+
+.primo-articolo .blocco-1 {
+  margin-bottom: 1.5rem;
+}
+
+.titolo-secondario {
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.secondo-articolo {
+  max-width: 1000px;
+  margin: -2rem auto 5rem;
+}
+
+.secondo-articolo .blocco-1,
+.secondo-articolo .blocco-2 {
+  text-align: left;
+  margin-left: 460px;
+  padding: 0;
+  max-width: 420px;
+  font-size: 0.95rem;
+}
+
+.secondo-articolo .blocco-1 {
+  margin-bottom: 1.5rem;
 }
 
 .sezione-garanzia {
   background-color: #e22d0e;
   color: #ffffff;
   text-align: center;
-  margin-top: 1rem;
-  padding: 0.5rem;
+  padding: 4rem 2rem;
 }
+
 .titolo-garanzia {
-  font-size: 2rem;
-}
-.testo-garanzia {
-  font-style: italic;
+  color: #ffffff;
+  font-size: 1.7rem;
   margin-bottom: 1rem;
 }
+
+.testo-garanzia {
+  font-style: italic;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
 .nome {
-  font-size: larger;
+  font-size: 0.9rem;
   margin-bottom: 0.1rem;
 }
+
 .ruolo {
-  font-size: smaller;
-  padding-bottom: 0.5rem;
+  font-size: 0.7rem;
 }
 
 .sezione-img {
-  padding: 1rem;
-  margin: 1rem;
-  text-align: center;
+  width: 31%;
+  margin: 3rem 1%;
+  float: left;
+  padding: 0;
 }
-.titolo-secondario {
-  padding-top: 1.5rem;
+
+.sezione-img img {
+  width: 100%;
 }
+
 .scheda-testo {
   border: 1px solid #dee1e3;
+  padding: 1.5rem 1.2rem 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  min-height: 130px;
 }
-/* FOOTER */
+
+.scheda-testo .titolo-secondario {
+  padding-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.sezione-footer {
+  clear: both;
+}
+
 .sezione-footer {
   background-color: #25a2c3;
   color: #c8e7f0;
   text-align: center;
   padding: 4rem 2rem;
-  list-style-type: none;
-}
-.titolo-footer {
-  color: #ffffff;
-  font-size: 2rem;
-  margin-bottom: 1rem;
 }
 
+.titolo-footer {
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+/* lista contatti */
 .lista-contatti {
   list-style-type: none;
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
+  padding: 0;
+  font-size: 0.85rem;
 }
+
+.lista-contatti li {
+  margin-bottom: 0.4rem;
+}
+
+.lista-contatti i {
+  margin-right: 0.4rem;
+}
+
 .lista-contatti a,
-p a {
-  color: white;
+.sezione-footer p a {
+  color: #ffffff;
+  text-decoration: none;
 }
+
+.lista-contatti a:hover,
+.sezione-footer p a:hover {
+  text-decoration: underline;
+}
+
 .linea-footer {
-  margin-bottom: 2rem;
+  border: none;
+  border-top: 1px solid #c8e7f0;
+  width: 140px;
+  margin: 0 auto 1.5rem;
+}
+
+.sezione-footer p {
+  font-size: 0.75rem;
 }
