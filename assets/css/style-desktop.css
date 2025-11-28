@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+.pagina-epicode {
+  padding: 0;
+  width: 100%;
+  max-width: 1366px;
+  min-height: 1920px;
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.65;
+  color: #393d41;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+.titolo-principale,
+.titolo-secondario {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #25a2c3;
+  line-height: 1.5;
+}
+
+header.intestazione-logo {
+  display: block;
+  width: 100%;
+  background-color: #000000;
+  text-align: left;
+  padding: 2rem 0;
+}
+
+header.intestazione-logo img {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.intestazione {
+  background-image: url("../images/banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: -2rem;
+  padding-bottom: 5rem;
+}
+.titolo-principale {
+  padding: 2.5rem;
+  font-size: 4rem;
+}
+.testo-sottotitolo {
+  padding: 1rem;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.bottone {
+  background-color: #f04c2f;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 4%;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.bottone:hover {
+  opacity: 0.9;
+}
+
+.blocco-1,
+.blocco-2 {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+.titolo-secondario {
+  font-size: larger;
+  margin-bottom: 0.5rem;
+}
+
+.img-notebook {
+  width: 250px;
+  height: 250px;
+  margin: 2rem auto;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.sezione-garanzia {
+  background-color: #e22d0e;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+}
+.titolo-garanzia {
+  font-size: 2rem;
+}
+.testo-garanzia {
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+.nome {
+  font-size: larger;
+  margin-bottom: 0.1rem;
+}
+.ruolo {
+  font-size: smaller;
+  padding-bottom: 0.5rem;
+}
+
+.sezione-img {
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
+.titolo-secondario {
+  padding-top: 1.5rem;
+}
+.scheda-testo {
+  border: 1px solid #dee1e3;
+}
+/* FOOTER */
+.sezione-footer {
+  background-color: #25a2c3;
+  color: #c8e7f0;
+  text-align: center;
+  padding: 4rem 2rem;
+  list-style-type: none;
+}
+.titolo-footer {
+  color: #ffffff;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.lista-contatti {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+.lista-contatti a,
+p a {
+  color: white;
+}
+.linea-footer {
+  margin-bottom: 2rem;
+}
