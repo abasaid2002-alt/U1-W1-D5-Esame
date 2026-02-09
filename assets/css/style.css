@@ -1,147 +1,194 @@
 * {
-  box-sizing: border-box;
+  /* seleziono tutto */
+  box-sizing: border-box; /* includo padding e bordo nelle misure */
 }
 
 .pagina-epicode {
-  margin: 0 auto;
-  padding: 0;
-  width: 100%;
-  max-width: 450px;
-  min-height: 500px;
-  overflow-x: hidden;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.65;
-  color: #393d41;
+  /* seleziono il body con classe */
+  margin: 0 auto; /* centro la pagina */
+  padding: 0; /* tolgo padding */
+  width: 100%; /* uso tutta la larghezza */
+  max-width: 450px; /* limito la larghezza */
+  min-height: 500px; /* imposto altezza minima */
+  overflow-x: hidden; /* blocco scroll orizzontale */
+  font-family: "Open Sans", sans-serif; /* imposto font base */
+  line-height: 1.65; /* imposto interlinea */
+  color: #393d41; /* imposto colore testo */
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  /* seleziono tutte le immagini */
+  max-width: 100%; /* rendo responsive */
+  height: auto; /* mantengo proporzioni */
+  display: block; /* tolgo spazi inline */
 }
 
-h1,
-.titolo-principale,
+h1, /* seleziono h1 */
+.titolo-principale, /* seleziono titolo principale */
 .titolo-secondario {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #25a2c3;
-  line-height: 1.5;
+  /* seleziono titolo secondario */
+  font-family: "Montserrat", sans-serif; /* imposto font titoli */
+  font-weight: 700; /* imposto grassetto */
+  color: #25a2c3; /* imposto colore titoli */
+  line-height: 1.5; /* imposto interlinea titoli */
+}
+
+.intestazione-logo {
+  /* seleziono l’header logo */
+  background-color: #000000; /* metto sfondo nero */
+  text-align: center; /* centro il contenuto */
+  padding: 3rem 0; /* do spazio sopra e sotto */
+  margin-bottom: 2rem; /* spazio sotto */
 }
 
 .intestazione-logo img {
-  background-color: #000000;
-  text-align: center;
-  padding: 3rem 8rem;
-  margin-bottom: 2rem;
+  /* seleziono l’immagine del logo */
+  margin: 0 auto; /* centro l’immagine */
 }
 
 .intestazione {
-  background-image: url("../images/banner.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  margin-top: -2rem;
-  padding: 0.5rem;
+  /* seleziono la sezione hero */
+  background-image: url("../images/banner.jpg"); /* metto immagine sfondo */
+  background-size: cover; /* copro tutto */
+  background-position: center; /* centro lo sfondo */
+  background-repeat: no-repeat; /* evito ripetizioni */
+  text-align: center; /* centro il testo */
+  padding: 1.5rem 0.5rem; /* metto padding */
 }
+
 .titolo-principale {
-  padding-top: 1.5rem;
-  font-size: 2rem;
+  /* seleziono il titolo principale */
+  padding-top: 1rem; /* spazio sopra */
+  font-size: 2rem; /* dimensione titolo */
+}
+
+.testo-sottotitolo {
+  /* seleziono il sottotitolo */
+  margin: 1rem 0; /* spazio sopra e sotto */
 }
 
 .bottone {
-  background-color: #f04c2f;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  border: none;
-  padding: 0.8rem 1rem;
-  border-radius: 4%;
-  cursor: pointer;
-  margin: 1rem;
+  /* seleziono il bottone */
+  background-color: #f04c2f; /* metto sfondo arancione */
+  color: #ffffff; /* testo bianco */
+  font-family: "Montserrat", sans-serif; /* font del bottone */
+  font-weight: 700; /* grassetto */
+  border: none; /* tolgo bordo */
+  padding: 0.8rem 1rem; /* spazio interno */
+  border-radius: 4px; /* angoli arrotondati */
+  cursor: pointer; /* mano sul mouse */
+  margin: 1rem; /* margine esterno */
 }
 
 .bottone:hover {
-  opacity: 0.9;
+  /* seleziono hover bottone */
+  opacity: 0.9; /* rendo leggermente trasparente */
 }
 
-.blocco-1,
+.blocco-1, /* seleziono blocco 1 */
 .blocco-2 {
-  text-align: center;
-  margin-top: 1rem;
-  padding: 0.5rem;
+  /* seleziono blocco 2 */
+  text-align: center; /* centro il testo */
+  margin-top: 1rem; /* spazio sopra */
+  padding: 0.5rem; /* spazio interno */
 }
+
 .titolo-secondario {
-  font-size: larger;
-  margin-bottom: 0.5rem;
+  /* seleziono titoli secondari */
+  font-size: 1.2rem; /* dimensione titolo */
+  margin-bottom: 0.5rem; /* spazio sotto */
 }
 
 .img-notebook {
-  width: 250px;
-  height: 250px;
-  margin: 2rem auto;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #ffffff;
+  /* seleziono il contenitore notebook */
+  width: 250px; /* larghezza fissa */
+  height: 250px; /* altezza fissa */
+  margin: 2rem auto; /* centro e distanzio */
+  border-radius: 50%; /* cerchio */
+  overflow: hidden; /* taglio l’immagine */
+  background-color: #ffffff; /* sfondo bianco */
 }
 
 .sezione-garanzia {
-  background-color: #e22d0e;
-  color: #ffffff;
-  text-align: center;
-  margin-top: 1rem;
-  padding: 0.5rem;
+  /* seleziono sezione garanzia */
+  background-color: #e22d0e; /* sfondo rosso */
+  color: #ffffff; /* testo bianco */
+  text-align: center; /* centro testo */
+  margin-top: 1rem; /* spazio sopra */
+  padding: 1rem; /* spazio interno */
 }
+
 .titolo-garanzia {
-  font-size: 2rem;
+  /* seleziono titolo garanzia */
+  font-size: 2rem; /* dimensione grande */
+  color: #ffffff; /* colore bianco */
 }
+
 .testo-garanzia {
-  font-style: italic;
-  margin-bottom: 1rem;
+  /* seleziono testo garanzia */
+  font-style: italic; /* metto corsivo */
+  margin-bottom: 1rem; /* spazio sotto */
 }
+
 .nome {
-  font-size: larger;
-  margin-bottom: 0.1rem;
+  /* seleziono nome */
+  font-size: 1.1rem; /* dimensione media */
+  margin-bottom: 0.1rem; /* spazio minimo sotto */
+  color: #ffffff; /* colore bianco */
 }
+
 .ruolo {
-  font-size: smaller;
-  padding-bottom: 0.5rem;
+  /* seleziono ruolo */
+  font-size: 0.9rem; /* testo più piccolo */
+  padding-bottom: 0.5rem; /* spazio sotto */
 }
 
 .sezione-img {
-  padding: 1rem;
-  margin: 1rem;
-  text-align: center;
+  /* seleziono le sezioni immagine */
+  padding: 1rem; /* spazio interno */
+  margin: 1rem; /* spazio esterno */
+  text-align: center; /* centro testo */
 }
-.titolo-secondario {
-  padding-top: 1.5rem;
-}
+
 .scheda-testo {
-  border: 1px solid #dee1e3;
+  /* seleziono la scheda testo */
+  border: 1px solid #dee1e3; /* metto bordo */
+  padding: 1rem; /* metto padding */
 }
+
 /* FOOTER */
 .sezione-footer {
-  background-color: #25a2c3;
-  color: #c8e7f0;
-  text-align: center;
-  padding: 4rem 2rem;
-  list-style-type: none;
+  /* seleziono footer */
+  background-color: #25a2c3; /* sfondo azzurro */
+  color: #c8e7f0; /* testo chiaro */
+  text-align: center; /* centro testo */
+  padding: 4rem 2rem; /* spazio interno */
 }
+
 .titolo-footer {
-  color: #ffffff;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  /* seleziono titolo footer */
+  color: #ffffff; /* testo bianco */
+  font-size: 2rem; /* dimensione grande */
+  margin-bottom: 1rem; /* spazio sotto */
 }
 
 .lista-contatti {
-  list-style-type: none;
-  margin-bottom: 2rem;
+  /* seleziono lista contatti */
+  list-style-type: none; /* tolgo pallini */
+  margin-bottom: 2rem; /* spazio sotto */
+  padding: 0; /* tolgo padding */
 }
-.lista-contatti a,
-p a {
-  color: white;
+
+.lista-contatti a, /* seleziono link contatti */
+.sezione-footer p a {
+  /* seleziono link nel paragrafo footer */
+  color: #ffffff; /* link bianchi */
 }
+
 .linea-footer {
-  margin-bottom: 2rem;
+  /* seleziono hr footer */
+  border: none; /* tolgo bordo base */
+  border-top: 1px solid #c8e7f0; /* metto linea sopra */
+  width: 140px; /* larghezza linea */
+  margin: 0 auto 2rem; /* centro e distanzio */
 }

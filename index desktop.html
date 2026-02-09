@@ -1,61 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
   <head>
+    <!-- Imposto charset e viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Metto titolo e descrizione -->
     <title>Progetto Epicode - Layout completo HTML + CSS</title>
-
     <meta name="description" content="Da zero a Epicode con i corsi completi per diventare uno sviluppatore professionista in 3 mesi." />
+
+    <!-- Collego reset -->
     <link rel="stylesheet" href="./assets/css/reset.css" />
+
+    <!-- Importo Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Pre-collego i font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Importo i font -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Montserrat:wght@700&display=swap" rel="stylesheet" />
+
+    <!-- Collego lo stile desktop -->
     <link rel="stylesheet" href="./assets/css/style-desktop.css" />
   </head>
+
   <body class="pagina-epicode">
+    <!-- Metto il contenuto principale -->
     <main class="contenuto-principale">
+      <!-- Metto l’header con il logo -->
       <header class="intestazione-logo">
         <div class="logo-sito">
-          <img src="./assets/images/logo.png" alt="logo del sito" />
+          <img src="./assets/images/logo.png" alt="Logo del sito" />
         </div>
       </header>
 
-      <div class="intestazione">
+      <!-- Metto la sezione introduttiva -->
+      <section class="intestazione">
         <h1 class="titolo-principale">Corso Web Developer</h1>
         <p class="testo-sottotitolo">
           Smetti di inseguire i titoli, inizia a lavorare. Mentre tutti vogliono arricchire il CV, tu pensa ad arricchire le tue competenze.
         </p>
-        <button class="bottone" type="submit">PARTIAMO!</button>
-      </div>
 
+        <!-- Cambio submit in button perché non ho un form -->
+        <button class="bottone" type="button">PARTIAMO!</button>
+      </section>
+
+      <!-- Metto il primo articolo con immagine dentro -->
       <article class="primo-articolo">
         <div class="blocco-1">
           <h2 class="titolo-secondario">Tutti ti cercheranno</h2>
           <p>Sono 30.000 in Italia le posizioni di developer scoperte, scegli quella che ti stimola di più.</p>
         </div>
+
         <div class="blocco-2">
           <h2 class="titolo-secondario">Lavora dove vuoi</h2>
           <p>Lavora da casa, in riva al mare o in montagna.</p>
         </div>
 
         <div class="img-notebook">
-          <img src="./assets/images/notebook.jpg" alt="notebook" />
+          <img src="./assets/images/notebook.jpg" alt="Notebook" />
         </div>
       </article>
 
+      <!-- Metto il secondo articolo -->
       <article class="secondo-articolo">
         <div class="blocco-1">
           <h2 class="titolo-secondario">Scegli il tuo ruolo</h2>
           <p>Potrai scegliere se essere Azienda, Freelance o Startup.</p>
         </div>
+
         <div class="blocco-2">
           <h2 class="titolo-secondario">Lavoro in libertà</h2>
           <p>Non serve lavorare in ufficio per essere creatori di prodotti digitali.</p>
         </div>
       </article>
 
+      <!-- Metto la sezione garanzia -->
       <section class="sezione-garanzia">
         <h2 class="titolo-garanzia">Epicode garantisce</h2>
         <p class="testo-garanzia">"3 mesi intensivi di corso che cambieranno radicalmente la tua vita".</p>
@@ -63,27 +85,30 @@
         <p class="ruolo">CEO, Epicode</p>
       </section>
 
+      <!-- Metto le tre schede -->
       <section class="sezione-img">
         <div class="foto-1">
-          <img src="./assets/images/foto1.jpg" alt="foto1" />
+          <img src="./assets/images/foto1.jpg" alt="Foto 1" />
         </div>
         <div class="scheda-testo">
           <h3 class="titolo-secondario">Il tuo PC</h3>
           <p>Se vuoi diventare developer è l’unico strumento di cui hai bisogno.</p>
         </div>
       </section>
+
       <section class="sezione-img">
         <div class="foto-2">
-          <img src="./assets/images/foto2.jpg" alt="foto2" />
+          <img src="./assets/images/foto2.jpg" alt="Foto 2" />
         </div>
         <div class="scheda-testo">
           <h3 class="titolo-secondario">Impara ora</h3>
-          <p>Impara da chi diventerai tra qualche anno, e diventa una rockstar come loro.</p>
+          <p>Impara da chi diventerai tra qualche anno, e diventa una rockstar.</p>
         </div>
       </section>
+
       <section class="sezione-img">
         <div class="foto-3">
-          <img src="./assets/images/foto3.jpg" alt="foto3" />
+          <img src="./assets/images/foto3.jpg" alt="Foto 3" />
         </div>
         <div class="scheda-testo">
           <h3 class="titolo-secondario">Lavora subito</h3>
@@ -91,8 +116,10 @@
         </div>
       </section>
 
+      <!-- Metto il footer contatti -->
       <footer class="sezione-footer">
         <h2 class="titolo-footer">Contattaci</h2>
+
         <ul class="lista-contatti">
           <li>
             <i class="fas fa-phone-alt" aria-hidden="true"></i>
@@ -107,9 +134,14 @@
             <span>Via Appia 1 - 00100 Roma (RM)</span>
           </li>
         </ul>
+
         <hr class="linea-footer" />
 
-        <p>&copy; 2021. Immagini di <a href="https://pixabay.com" target="_blank">Pixabay</a>.</p>
+        <!-- Aggiungo rel per sicurezza con _blank -->
+        <p>
+          &copy; 2021. Immagini di
+          <a href="https://pixabay.com" target="_blank" rel="noopener noreferrer">Pixabay</a>.
+        </p>
       </footer>
     </main>
   </body>

@@ -1,240 +1,274 @@
 * {
-  box-sizing: border-box;
+  /* seleziono tutto */
+  box-sizing: border-box; /* includo padding e bordo nelle misure */
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  /* seleziono immagini */
+  max-width: 100%; /* rendo responsive */
+  height: auto; /* mantengo proporzioni */
+  display: block; /* tolgo spazi inline */
 }
 
 .pagina-epicode {
-  margin: 0 auto;
-  padding: 0;
-  max-width: 1366px;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.65;
-  color: #393d41;
-  background-color: #ffffff;
+  /* seleziono body con classe */
+  margin: 0 auto; /* centro pagina */
+  padding: 0; /* tolgo padding */
+  max-width: 1366px; /* larghezza massima */
+  font-family: "Open Sans", sans-serif; /* font base */
+  line-height: 1.65; /* interlinea */
+  color: #393d41; /* colore testo */
+  background-color: #ffffff; /* sfondo bianco */
 }
 
-h1,
-.titolo-principale,
-.titolo-secondario,
-.titolo-garanzia,
+h1, /* seleziono h1 */
+.titolo-principale, /* seleziono titolo principale */
+.titolo-secondario, /* seleziono titolo secondario */
+.titolo-garanzia, /* seleziono titolo garanzia */
 .titolo-footer {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  color: #25a2c3;
-  line-height: 1.5;
+  /* seleziono titolo footer */
+  font-family: "Montserrat", sans-serif; /* font titoli */
+  font-weight: 700; /* grassetto */
+  color: #25a2c3; /* colore titoli */
+  line-height: 1.5; /* interlinea titoli */
 }
 
 header.intestazione-logo {
-  width: 100%;
-  background-color: #000000;
-  padding: 1.5rem 0;
+  /* seleziono header logo */
+  width: 100%; /* uso tutta la larghezza */
+  background-color: #000000; /* sfondo nero */
+  padding: 1.5rem 0; /* padding verticale */
 }
 
 .logo-sito img {
-  height: 40px;
-  margin-left: 3rem;
+  /* seleziono immagine logo */
+  height: 40px; /* imposto altezza */
+  margin-left: 3rem; /* sposto a sinistra */
 }
 
 .intestazione {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../images/banner.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  padding: 6rem 2rem 7rem;
+  /* seleziono hero */
+  background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../images/banner.jpg"); /* sfondo + overlay */
+  background-size: cover; /* copro tutto */
+  background-position: center; /* centro */
+  background-repeat: no-repeat; /* no ripetizione */
+  text-align: center; /* centro testo */
+  padding: 6rem 2rem 7rem; /* padding grande */
 }
 
 .titolo-principale {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  /* seleziono titolo principale */
+  font-size: 3rem; /* dimensione */
+  margin-bottom: 1rem; /* spazio sotto */
 }
 
 .testo-sottotitolo {
-  max-width: 620px;
-  margin: 0 auto 2.5rem;
-  font-size: 1.05rem;
+  /* seleziono sottotitolo */
+  max-width: 620px; /* limito larghezza */
+  margin: 0 auto 2.5rem; /* centro e distanzio */
+  font-size: 1.05rem; /* dimensione testo */
 }
 
 .bottone {
-  background-color: #f04c2f;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  border: none;
-  padding: 0.9rem 2.6rem;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.95rem;
-  text-transform: uppercase;
+  /* seleziono bottone */
+  background-color: #f04c2f; /* sfondo arancione */
+  color: #ffffff; /* testo bianco */
+  font-family: "Montserrat", sans-serif; /* font bottone */
+  font-weight: 700; /* grassetto */
+  border: none; /* tolgo bordo */
+  padding: 0.9rem 2.6rem; /* padding */
+  border-radius: 4px; /* angoli */
+  cursor: pointer; /* mano */
+  font-size: 0.95rem; /* dimensione */
+  text-transform: uppercase; /* maiuscolo */
 }
 
 .bottone:hover {
-  opacity: 0.9;
+  /* hover bottone */
+  opacity: 0.9; /* effetto hover */
 }
 
 .primo-articolo {
-  position: relative;
-  max-width: 1000px;
-  margin: 5rem auto 3rem;
-  padding: 4rem 0 4rem;
+  /* seleziono primo articolo */
+  position: relative; /* riferimento per absolute */
+  max-width: 1000px; /* larghezza max */
+  margin: 5rem auto 3rem; /* centro e distanzio */
+  padding: 4rem 0 4rem; /* padding verticale */
 }
 
 .img-notebook {
-  position: absolute;
-  left: 80px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  overflow: hidden;
-  background-color: #ffffff;
+  /* seleziono cerchio notebook */
+  position: absolute; /* posizionamento libero */
+  left: 80px; /* sposto a sinistra */
+  top: 50%; /* centro verticale */
+  transform: translateY(-50%); /* centro perfetto */
+  width: 320px; /* dimensione */
+  height: 320px; /* dimensione */
+  border-radius: 50%; /* cerchio */
+  overflow: hidden; /* taglio immagine */
+  background-color: #ffffff; /* sfondo bianco */
 }
 
-.primo-articolo .blocco-1,
+.primo-articolo .blocco-1, /* seleziono blocco 1 */
 .primo-articolo .blocco-2 {
-  text-align: left;
-  margin-left: 460px;
-  padding: 0;
-  max-width: 420px;
-  font-size: 0.95rem;
+  /* seleziono blocco 2 */
+  text-align: left; /* testo a sinistra */
+  margin-left: 460px; /* lascio spazio al cerchio */
+  padding: 0; /* tolgo padding */
+  max-width: 420px; /* limito larghezza */
+  font-size: 0.95rem; /* dimensione testo */
 }
 
 .primo-articolo .blocco-1 {
-  margin-bottom: 1.5rem;
+  /* seleziono blocco 1 */
+  margin-bottom: 1.5rem; /* spazio sotto */
 }
 
 .titolo-secondario {
-  font-size: 1rem;
-  margin-bottom: 0.2rem;
+  /* seleziono titolo secondario */
+  font-size: 1rem; /* dimensione */
+  margin-bottom: 0.2rem; /* spazio sotto */
 }
 
 .secondo-articolo {
-  max-width: 1000px;
-  margin: -2rem auto 5rem;
+  /* seleziono secondo articolo */
+  max-width: 1000px; /* larghezza max */
+  margin: -2rem auto 5rem; /* centro e distanzio */
 }
 
-.secondo-articolo .blocco-1,
+.secondo-articolo .blocco-1, /* seleziono blocco 1 */
 .secondo-articolo .blocco-2 {
-  text-align: left;
-  margin-left: 460px;
-  padding: 0;
-  max-width: 420px;
-  font-size: 0.95rem;
+  /* seleziono blocco 2 */
+  text-align: left; /* testo a sinistra */
+  margin-left: 460px; /* allineo come sopra */
+  padding: 0; /* tolgo padding */
+  max-width: 420px; /* limito */
+  font-size: 0.95rem; /* dimensione */
 }
 
 .secondo-articolo .blocco-1 {
-  margin-bottom: 1.5rem;
+  /* seleziono blocco 1 */
+  margin-bottom: 1.5rem; /* spazio sotto */
 }
 
 .sezione-garanzia {
-  background-color: #e22d0e;
-  color: #ffffff;
-  text-align: center;
-  padding: 4rem 2rem;
+  /* seleziono garanzia */
+  background-color: #e22d0e; /* sfondo rosso */
+  color: #ffffff; /* testo bianco */
+  text-align: center; /* centro testo */
+  padding: 4rem 2rem; /* padding */
 }
 
 .titolo-garanzia {
-  color: #ffffff;
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
+  /* seleziono titolo garanzia */
+  color: #ffffff; /* bianco */
+  font-size: 1.7rem; /* dimensione */
+  margin-bottom: 1rem; /* spazio sotto */
 }
 
 .testo-garanzia {
-  font-style: italic;
-  margin-bottom: 2rem;
-  font-size: 0.95rem;
+  /* seleziono testo garanzia */
+  font-style: italic; /* corsivo */
+  margin-bottom: 2rem; /* spazio sotto */
+  font-size: 0.95rem; /* dimensione */
 }
 
 .nome {
-  font-size: 0.9rem;
-  margin-bottom: 0.1rem;
+  /* seleziono nome */
+  font-size: 0.9rem; /* dimensione */
+  margin-bottom: 0.1rem; /* spazio */
 }
 
 .ruolo {
-  font-size: 0.7rem;
+  /* seleziono ruolo */
+  font-size: 0.7rem; /* dimensione piccola */
 }
 
 .sezione-img {
-  width: 31%;
-  margin: 3rem 1%;
-  float: left;
-  padding: 0;
+  /* seleziono card */
+  width: 31%; /* larghezza */
+  margin: 3rem 1%; /* margini */
+  float: left; /* affianco */
+  padding: 0; /* tolgo padding */
 }
 
 .sezione-img img {
-  width: 100%;
+  /* seleziono immagini delle card */
+  width: 100%; /* riempio */
 }
 
 .scheda-testo {
-  border: 1px solid #dee1e3;
-  padding: 1.5rem 1.2rem 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  min-height: 130px;
+  /* seleziono box testo */
+  border: 1px solid #dee1e3; /* bordo */
+  padding: 1.5rem 1.2rem 2rem; /* padding */
+  text-align: center; /* centro testo */
+  font-size: 0.9rem; /* dimensione */
+  min-height: 130px; /* altezza minima */
 }
 
 .scheda-testo .titolo-secondario {
-  padding-top: 0;
-  margin-bottom: 0.4rem;
+  /* seleziono titolo dentro scheda */
+  padding-top: 0; /* tolgo padding */
+  margin-bottom: 0.4rem; /* spazio */
 }
 
 .sezione-footer {
-  clear: both;
-}
-
-.sezione-footer {
-  background-color: #25a2c3;
-  color: #c8e7f0;
-  text-align: center;
-  padding: 4rem 2rem;
+  /* seleziono footer */
+  clear: both; /* chiudo i float */
+  background-color: #25a2c3; /* sfondo */
+  color: #c8e7f0; /* colore testo */
+  text-align: center; /* centro */
+  padding: 4rem 2rem; /* padding */
 }
 
 .titolo-footer {
-  color: #ffffff;
-  font-size: 1.6rem;
-  margin-bottom: 1.5rem;
+  /* seleziono titolo footer */
+  color: #ffffff; /* bianco */
+  font-size: 1.6rem; /* dimensione */
+  margin-bottom: 1.5rem; /* spazio */
 }
 
 /* lista contatti */
 .lista-contatti {
-  list-style-type: none;
-  margin: 0 0 2rem;
-  padding: 0;
-  font-size: 0.85rem;
+  /* seleziono lista */
+  list-style-type: none; /* tolgo pallini */
+  margin: 0 0 2rem; /* margini */
+  padding: 0; /* tolgo padding */
+  font-size: 0.85rem; /* dimensione */
 }
 
 .lista-contatti li {
-  margin-bottom: 0.4rem;
+  /* seleziono item */
+  margin-bottom: 0.4rem; /* spazio sotto */
 }
 
 .lista-contatti i {
-  margin-right: 0.4rem;
+  /* seleziono icone */
+  margin-right: 0.4rem; /* spazio a destra */
 }
 
-.lista-contatti a,
+.lista-contatti a, /* seleziono link */
 .sezione-footer p a {
-  color: #ffffff;
-  text-decoration: none;
+  /* seleziono link nel testo */
+  color: #ffffff; /* bianco */
+  text-decoration: none; /* tolgo underline */
 }
 
-.lista-contatti a:hover,
+.lista-contatti a:hover, /* seleziono hover link */
 .sezione-footer p a:hover {
-  text-decoration: underline;
+  /* seleziono hover link footer */
+  text-decoration: underline; /* underline */
 }
 
 .linea-footer {
-  border: none;
-  border-top: 1px solid #c8e7f0;
-  width: 140px;
-  margin: 0 auto 1.5rem;
+  /* seleziono hr */
+  border: none; /* tolgo bordo */
+  border-top: 1px solid #c8e7f0; /* linea */
+  width: 140px; /* larghezza */
+  margin: 0 auto 1.5rem; /* centro */
 }
 
 .sezione-footer p {
-  font-size: 0.75rem;
+  /* seleziono testo footer */
+  font-size: 0.75rem; /* dimensione piccola */
 }

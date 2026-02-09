@@ -1,35 +1,136 @@
-/* CSS Reset */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+/* CSS Reset */ /* titolo reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  /* azzero gli elementi */
+  margin: 0; /* tolgo margini */
+  padding: 0; /* tolgo padding */
+  border: 0; /* tolgo bordi */
+  font-size: 100%; /* dimensione standard */
+  font: inherit; /* eredito font */
+  vertical-align: baseline; /* allineo baseline */
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  /* elementi html5 */
+  display: block; /* li metto a blocco */
 }
 
 body {
-    line-height: 1;
+  /* seleziono body */
+  line-height: 1; /* interlinea base */
 }
 
-blockquote, q {
-    quotes: none;
+blockquote,
+q {
+  /* seleziono citazioni */
+  quotes: none; /* tolgo virgolette */
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  /* pseudo elementi */
+  content: ""; /* contenuto vuoto */
+  content: none; /* rimuovo contenuto */
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  /* seleziono tabelle */
+  border-collapse: collapse; /* unisco bordi */
+  border-spacing: 0; /* tolgo spazi */
 }
 
 body {
-    -webkit-text-size-adjust: none;
+  /* seleziono body (mobile) */
+  -webkit-text-size-adjust: none; /* evito resize testo iOS */
 }
